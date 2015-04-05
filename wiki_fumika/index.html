@@ -1,0 +1,124 @@
+    <!doctype html>
+    <html ng-app>
+    <head>
+    <title>ふみふみがWikipediaから検索してくれるやつ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+    <script src="./fmk.js"></script>
+    <style>
+    /* 吹き出し用 */
+    .usa-box {
+position: relative;
+background: #AFEEEE;
+width: 490px;
+       margin-bottom: -10px;
+padding: 5px;
+    }
+
+.usa-box:before,
+    .usa-box:after {
+content: '';
+position: absolute;
+display: block;
+    }
+
+.usa-box.top:after {
+top: -9px;
+left: 5px;
+      border-bottom: 10px solid #AFEEEE;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+}
+
+.usa-box.bottom:after {
+bottom: -9px;
+left: 5px;
+      border-top: 10px solid #AFEEEE;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+}
+
+.usa-box.left:after {
+top: 10px;
+left: -9px;
+      border-top: 5px solid transparent;
+      border-right: 10px solid #AFEEEE;
+      border-bottom: 5px solid transparent;
+}
+
+.usa-box.right:after {
+top: 10px;
+right: -9px;
+       border-top: 5px solid transparent;
+       border-left: 10px solid #AFEEEE;
+       border-bottom: 5px solid transparent;
+}
+
+.fukidashi-line {
+width: 700px;
+display:table;
+        box-sizing: border-box;
+}
+.kao {
+width: 100px;
+position: relative;
+display: table-cell;
+         vertical-align: middle;
+}
+.fukidashi_right {
+position: relative;
+display: table-cell;
+         vertical-align: bottom;
+         padding-left:75px;
+         padding-right:25px;
+}
+.fukidashi_left {
+position: relative;
+display: table-cell;
+         vertical-align: bottom;
+         padding-left:25px;
+         padding-right:75px;
+}
+</style>
+    </head>
+    <body>
+    <h2>ふみふみがWikipediaから検索してくれるやつ</h2>
+    <ul>
+        <li>キーワードを入力するとふみふみがWikipediaから拾ってきてくれます</li>
+        <li>口調がふみふみでないのはご愛嬌・・・</li>
+    </ul>
+    <div ng-controller="FMKCtrl">
+    <div ng-repeat="talk in talks">
+ <span ng-if="talk.who == 'fumika'">
+
+    <div class="fukidashi-line">
+    <div class="kao">
+    <img src="fumika.png" width="100" height="115">
+    </div>
+    <div class="fukidashi_left">
+    <div class="usa-box left">
+{{talk.text}}                            </div>
+<p></p></div>
+</div>
+</span>
+<span ng-if="talk.who == 'you'">
+<div class="fukidashi-line">
+<div class="fukidashi_right">
+<div class="usa-box right">
+    {{talk.text}}
+            </div>
+            <p></p></div>
+            <div class="kao">
+                       <img src="space.gif" width="100" height="115">
+                        </div>
+                        </div>
+</span>
+</div>
+
+<form ng-submit="addTalk()">
+<input type="text" ng-model="chat" size="30"
+placeholder="キーワードを入力してください">
+<input class="btn-primary" type="submit" value="聞く">
+</form>
+</div>
+</body>
+    </html>
