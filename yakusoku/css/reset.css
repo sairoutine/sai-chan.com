@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, p, h1, h2, h3, h4, h5, h6, ul, li, table {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	overflow: hidden;
+	outline:none;
+}
+
+img {
+	border:none;
+}

@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+Body {
+	background-color: #2C5EFF;
+}
+#wrapper {
+	background-image: url(../image/bg.png);
+	background-repeat: no-repeat;
+	width: 1480px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#rogo {
+	margin-right: auto;
+	margin-left: auto;
+	height: 280px;
+	width: 640px;
+	padding-top: 50px;
+}
+#about {
+	width: 440px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 80px;
+	height: 120px;
+	color: #FF962E;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 40px;
+	margin-bottom: 550px;
+}
+#story {
+	width: 420px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	font-size: 20px;
+	line-height: 42px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+#music {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 200px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #8727CC;
+	line-height: 42px;
+}
+#note {
+	width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-weight: bold;
+	color: #FFF;
+	margin-bottom: 200px;
+}
+#footer {
+	height: 200px;
+	background-image: url(../image/footer.png);
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	color: #FFF;
+	font-weight: bold;
+}
+#footer #sunflowergame {
+	height: 64px;
+	width: 370px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	margin-bottom: 30px;
+	padding-top: 30px;
+}
+#footer a #twitter {
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 45px;
+	display: block;
+}
