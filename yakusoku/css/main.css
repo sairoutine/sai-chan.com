@@ -31,14 +31,54 @@ Body {
 	line-height: 40px;
 	margin-bottom: 550px;
 }
+#taiken {
+	height: 250px;
+	padding-top: 150px;
+	padding-bottom: 100px;
+	padding-right: 250px;
+	padding-left: 300px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #FFF;
+}
+#DLtext {
+	font-family: "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;
+	font-size: 36px;
+	display: block;
+	margin-left: 100px;
+	margin-top: 50px;
+	color: #FFF;
+	font-weight: bold;
+	float: left;
+	width: 350px;
+}
+#taikenLink  {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 400px;
+	height: 128px;
+}
+#taiken #attention {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 16px;
+	color: #FFF;
+	clear: left;
+	margin-right: 150px;
+	margin-left: 150px;
+	display: block;
+	padding-top: 20px;
+}
+
+
+
 #story {
-	width: 420px;
+	width: 500px;
 	margin-right: auto;
 	margin-left: auto;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-weight: bold;
 	color: #FFF;
-	font-size: 20px;
+	font-size: 24px;
 	line-height: 42px;
 	padding-bottom: 30px;
 	padding-top: 30px;
@@ -62,7 +102,7 @@ Body {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-weight: bold;
 	color: #FFF;
-	margin-bottom: 200px;
+	margin-bottom: 150px;
 }
 #footer {
 	height: 200px;
