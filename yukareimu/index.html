@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<!-- TODO: スクショ増やす -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title></title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather" />
+
+	<!-- OGP -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="紫と霊夢の終わらない夏 特設サイト" />
+	<meta property="og:url" content="http://yukareimu.sai-chan.com" />
+	<meta property="og:image" content="http://yukareimu.sai-chan.com/img/title.png" />
+	<meta property="og:description" content="東方二次創作2Dアクションゲーム「紫と霊夢の終わらない夏」特設サイトです">
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:site" content="@saigyojiyu" />
+	<meta property="twitter:creator" content="@saigyojiyu">
+	<meta property="twitter:title" content="紫と霊夢の終わらない夏 特設サイト" />
+	<meta property="twitter:description" content="東方二次創作2Dアクションゲーム「紫と霊夢の終わらない夏」特設サイトです">
+	<meta property="twitter:image" content="http://yukareimu.sai-chan.com/img/title.png">
+<style>
+.modal-content {
+    position:fixed;
+    display:none;
+    z-index:2;
+    margin:0;
+    padding:10px 20px;
+    border:2px solid #aaa;
+    background:#fff;
+}
+
+.modal-content p {
+    margin:0;
+    padding:0;
+}
+
+.modal-overlay {
+    z-index:1;
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:120%;
+    background-color:rgba(0,0,0,0.75);
+}
+
+.modal-open {
+    color:#00f;
+    text-decoration:underline;
+}
+
+.modal-open:hover {
+    cursor:pointer;
+    color:#f00;
+}
+
+.modal-close {
+    color:#00f;
+    text-decoration:underline;
+}
+
+.modal-close:hover {
+    cursor:pointer;
+    color:#f00;
+}
+</style>
+
+
+</head>
+<body id="top">
+<div id="body-wrapper">
+	<!-- Enterページ的なやつ -->
+	<!--
+	<div id="enter" class="center">
+		<p></p>
+		<p><button type="button" id="button-enter">Enter</button></p>
+	</div>
+	-->
+	<!-- 最上部へ行くボタン -->
+	<a id="scroll-to-top" href="#top"><i class="fa fa-arrow-circle-up"></i></a>
+	
+	<!-- ナビゲーションメニュー -->
+	<nav id="navbar" role="navigation">
+		<label id="nav-opener" for="nav-opener-check"><i class="fa fa-bars"></i></label>
+		<input id="nav-opener-check" name="nav-opener" type="checkbox" />
+		<ul id="nav">
+			<!-- TODO: <li><a href="#story"><span class="nav-label">物語</span></a></li> -->
+			<li><a href="#system"><span class="nav-label">ゲームシステム</span></a></li>
+			<li><a href="#sample"><span class="nav-label">スクリーンショット</span></a></li>
+			<li><a href="#download"><span class="nav-label">ダウンロード</span></a></li>
+			<li><a href="#about"><span class="nav-label">ゲーム詳細</span></a></li>
+			<li><a href="#order"><span class="nav-label">委託</span></a></li>
+			<li><a href="#history"><span class="nav-label">更新履歴</span></a></li>
+			<li><a href="#member"><span class="nav-label">Special Thanks</span></a></li>
+			<li><a href="#twitter"><span class="nav-label">Twitter</span></a></li>
+		</ul>
+	</nav>
+	
+	<div style="padding-top: 60px;"></div>
+	<!-- アイキャッチ -->
+	<section id="eyecatch" class="wrapper" style="background-image: url('img/title.png');padding-top: 100px;">
+	</section>
+		<h1></h1>
+	
+	<!-- コンテンツ -->
+	<!-- 物語 -->
+	<!-- TODO: 
+	<a name="story"></a>
+	<section id="story" class="wrapper">
+		<h2>物語</h2>
+		<p>
+			Coming soon...
+		</p>
+	</section>
+	-->
+
+	<!-- システム -->
+	<a name="system"></a>
+	<section id="system" class="wrapper">
+		<h2>ゲームシステム</h2>
+
+		<h3>ゲームの簡単な内容説明</h3>
+		<p>
+		霊夢と紫が主人公の2Dアクションパズルゲームです。<br />
+		プレイヤーは霊夢を操作します。<br />
+		紫は常に霊夢の反対側に居て、霊夢が移動すると、紫も反対側に移動します。<br />
+		ステージ上のアイテムを全て獲得するとクリアです。<br />
+		<br />
+		<img src="./img/howto1.png" width="40%" height="40%"><br />
+		<br />
+		<br />
+
+		X キーを押すと、霊夢と紫の位置が入れ替わります。<br />
+		霊夢だけでは獲得できないアイテムがあるので、霊夢と紫の位置を交代しながら<br />
+		アイテムを獲得してステージをクリアしていきます。<br />
+
+		<!--
+		<br />
+		<img src="./img/howto2.png" width="40%" height="40%"><br />
+		<br />
+		-->
+		<br />
+
+		霊夢と紫の位置を入れ替える回数には上限があるので、よく考えて<br />
+		ゲームをプレイしてみてください。<br />
+		</p>
+
+	</section>
+
+	<!-- スクリーンショット -->
+	<a name="sample"></a>
+	<section id="sample" class="wrapper">
+		<h2>スクリーンショット</h2>
+		<ul id="sample-list">
+			<li>
+				<a data-target="sample1" class="modal-open"><div class="sample-img" style="background-image: url('img/sample1.png')"></div></a>
+				<div id="sample1" class="modal-content">
+					<img src="img/sample1.png">
+				</div>
+			</li>
+
+			<li>
+				<a data-target="sample2" class="modal-open"><div class="sample-img" style="background-image: url('img/sample2.png')"></div></a>
+				<div id="sample2" class="modal-content">
+					<img src="img/sample2.png">
+				</div>
+			</li>
+
+			<li>
+				<a data-target="sample3" class="modal-open"><div class="sample-img" style="background-image: url('img/sample3.png')"></div></a>
+				<div id="sample3" class="modal-content">
+					<img src="img/sample3.png">
+				</div>
+			</li>
+
+
+				<!--
+			<li>
+				<div class="sample-caption">
+					<i class="fa caption-toggle"></i>
+					<p>
+						
+					</p>
+					<p>
+						<a href="#" target="_blank" class="banner"><img src="img/sample1.png" alt="" width="" height="" /></a>
+					</p>
+					<p>
+						<a href="#" target="_blank"><i class="icon-social icon-pixiv"></i></a>
+						<a href="#" target="_blank"><i class="icon-social icon-twitter"></i></a>
+					</p>
+				</div>
+			</li>
+				-->
+		</ul>
+	</section>
+
+	<!-- ダウンロード -->
+	<a name="download"></a>
+	<section id="download" class="wrapper">
+		<h2>ダウンロード</h2>
+
+		<h3>体験版</h3>
+		<p>
+			<a href="https://game.nicovideo.jp/atsumaru/games/gm3860">Web体験版(RPGアツマールへ飛びます)</a><br />
+			ダウンロード不要でブラウザで遊べる体験版です。古いブラウザでは遊べない可能性があります。
+		</p>
+		<p>
+			<a href="./taikenban.zip">ダウンロード体験版</a><br />
+			Windows/Mac 両方対応。完成版が自分のPCで遊べるかどうかの確認はこちらで。
+		</p>
+
+	</section>
+
+	<!-- 概要 -->
+	<a name="about"></a>
+	<section id="about" class="wrapper">
+		<h2>ゲーム詳細</h2>
+		<div id="cover" class="paper">
+			<a data-target="cover_img" class="modal-open"><img src="img/title.png" /></a>
+		</div>
+		<div id="cover_img" class="modal-content">
+			<img src="img/title.png">
+		</div>
+
+		<dl id="spec">
+			<dt>タイトル</dt>
+				<dd>紫と霊夢の終わらない夏</dd>
+			<dt>ジャンル</dt>
+				<dd>2Dアクションパズルゲーム</dd>
+			<dt>プレイ人数</dt>
+				<dd>1人</dd>
+			<dt>メディア</dt>
+				<dd>DLカード形式</dd>
+			<dt>内容</dt>
+				<dd>
+				霊夢と紫の位置を入れ替えて、ステージ上のアイテムを獲得してクリアを目指そう
+				</dd>
+			<dt>発行日</dt>
+				<dd>C92 夏コミ 1日目 東ラ-14b にて完成版 頒布予定</dd>
+			<dt>価格</dt>
+				<dd>1000円</dd>
+			<dt>委託</dt>
+				<dd>Coming soon...</dd>
+			<dt>制作</dt>
+				<dd>サークル ひまわり鎮痛剤</dd>
+		</dl>
+	<!--
+		<h3>執筆者募集について</h3>
+		<p>
+			
+		</p>
+		<h4>参加資格</h4>
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+		<h3>リンクについて</h3>
+		<p>下記のバナーに限り、転載、直リンクを可とします。</p>
+		<img src="" alt="" width="200px" height="40px" />
+		<pre>&lt;a href="" title="" target="_blank"&gt;&lt;img src="" alt="" width="200px" height="40px" /&gt;&lt;/a&gt;</pre>
+	-->
+		<ul id="share">
+			<li>
+				<p id="count-tweet" class="social-count"><a href="" target="_blank"></a></p>
+				<button id="tweet" class="btn twitter"><i class="fa fa-twitter"></i>Tweet</button>
+			</li>
+			<li>
+				<p id="count-like" class="social-count"></p>
+				<button id="like" class="btn facebook"><i class="fa fa-facebook-square"></i>Share</button>
+			</li>
+			<li>
+				<button id="line" class="btn line">LINE</button>
+			</li>
+		</ul>
+	</section>
+
+	<!-- 通販 -->
+	<a name="order"></a>
+	<section id="order" class="wrapper">
+		<h2>委託</h2>
+		<p>
+			Coming soon...
+		</p>
+	</section>
+
+	<!-- 更新履歴 -->
+	<a name="history"></a>
+	<section id="history" class="wrapper">
+		<h2>更新履歴</h2>
+		<p>
+			<div>
+			2017/07/16 特設サイトを公開しました<br />
+			</div>
+		</p>
+	</section>
+	<!-- member -->
+	<a name="member"></a>
+	<section id="member" class="wrapper">
+		<h2>Special Thanks</h2>
+		<dl id="spec">
+			<dt>イラスト</dt>
+				<dd>shnva 様(サークル: <a href="http://shnva.tumblr.com/">少女恋歌</a> Twitter: <a href="https://twitter.com/shinonova_ra">@shinonova_ra</a>)</dd>
+			<dt>BGM</dt>
+				<dd>敷き紙 様(Twitter: <a href="https://twitter.com/HouraijiN">@HouraijiN</a>)</dd>
+			<dt>ストーリー／シナリオ</dt>
+			<dd>土露団子 様(サークル: <a href="https://suzudango.jimdo.com/">すずだんご</a> Twitter: <a href="https://twitter.com/dango_doro">@dango_doro</a>)</dd>
+		</dl>
+	</section>
+
+	<!-- twitter -->
+	<a name="twitter"></a>
+	<section id="twitter" class="wrapper">
+		<h2>Twitter</h2>
+		<a class="twitter-timeline"  href="https://twitter.com/hashtag/%E7%B4%AB%E3%81%A8%E9%9C%8A%E5%A4%A2%E3%81%AE%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E5%A4%8F" data-widget-id="886217382154326017">#紫と霊夢の終わらない夏 のツイート</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</section>
+
+
+	<!-- フッタ -->
+<!--
+	<section id="footer" class="wrapper">
+		<div>
+			<address>
+				<br />
+				<a href="#" class="banner dummy"><img src="" alt="" width="" height="" /></a>
+			</address>
+		</div>
+		<div>
+			<h3>フリースペース</h3>
+			ここにTwitterウィジェット置いたり
+		</div>
+		<p id="credit"><a href="http://monsier-oui.github.io/OSHIRASE/">"OSHIRASE"</a> by oui</p>
+	</section>
+-->
+</div>
+
+<!-- Javascript -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="js/func.js"></script>
+</body>
+</html>
