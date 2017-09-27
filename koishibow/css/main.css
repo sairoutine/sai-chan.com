@@ -1,0 +1,217 @@
+img {
+    max-width: 100%;
+    height: auto;   
+}
+a{
+    color: #bcb8a1;
+}
+body{
+    font:1.1rem/1.8 Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+    color: #d9dbdf;
+    background-color: #010507;
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+header,navi,article,footer{
+    max-width: 960px;
+    margin:0 auto;
+}
+header{
+    width: 960px;
+    height: 540px;
+    background-image: url(../img/toppg_hedder.jpg);
+}
+header img {
+    margin: 388px 0 0 20px;    
+}
+main{
+    min-height: 100vh;
+    background-image: url(../img/common_bg_l_01.jpg);
+}
+navi ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+navi ul li{
+    max-width: 190px;
+    margin-right: 0.5%;
+    max-height: 48px;
+    z-index: 11;
+}
+navi li:last-child{
+    margin-right: 0;
+}
+#top{
+    width: 860px;
+    min-height: 968px;
+    padding: 50px;
+    margin-bottom: 40px;
+}
+#sum,#gsys,#con,#mem{
+    max-width: 860px;
+    min-height: 500px;
+    padding: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#top{
+    background-image: url(../img/toppj_bg_blu.png);
+}
+#sum{
+    background-image: url(../img/sumpj_bg_main.png);
+}
+#gsys{
+    background-image: url(../img/gsys_bg_main.png);
+}
+#con{
+    background-image: url(../img/conpg_bg_main.png);
+    text-align: center;
+}
+#mem{
+    background-image: url(../img/mempj_bg_main.png);
+}
+#mem dl dt,dd{
+    width: 260px;
+    margin: 0 auto;
+    text-align: left;
+
+}
+#mem dl dt{
+    font-size:1rem;
+    margin-bottom: 4px;
+    color: #bcb8a1;
+}
+#mem dl dd{
+    font-size:1.3rem;
+    text-align: left;
+    line-height:1;
+    padding-left: 20px;
+}
+#mem small{
+    font-size:0.8rem;
+    margin-left: 4px;
+}
+#mem img{
+    margin-left: 4px;
+}
+@keyframes horizontal {
+    0% { transform:translateX( -3px); }
+  100% { transform:translateX(  0px); }
+}
+@keyframes vertical {
+    0% { transform:translateY(-10px); }
+  100% { transform:translateY(  0px); }
+}
+#sum_tx1,#sum_tx2,#sum_tx3{
+    animation: horizontal 1s ease-in-out infinite alternate;
+    z-index: 20;
+}
+#sum_tx1{
+    animation-duration: 1.1s
+}
+#sum_tx2{
+    animation-duration: 1.3s
+}
+#sum_tx3{
+    animation-duration: 1.5s
+}
+footer{
+    max-width: 500px;
+    margin-top: 160px;
+}
+footer dl{
+    max-width: 500px;
+    margin: 0 auto;
+    clear: both;
+}
+footer dt{
+    float: left;
+    clear: left;
+    min-width: 120px;
+}
+footer dd{
+    float: left;
+    margin-left: 1em;
+}
+footer img{
+    vertical-align: bottom;
+}
+#trydl{
+    max-width: 500px;
+}
+#trydl:hover{
+	animation: rumble 0.12s linear infinite;
+}
+@keyframes rumble{
+	0%	{transform:rotate(0deg)	translate(0,0);}
+	12.5%	{transform:rotate(0.4deg)	translate(1px,-1px);}
+	25%	{transform:rotate(0.8deg)	translate(0px,1px);}
+	37.5%	{transform:rotate(0.4deg)	translate(-1px,0);}
+	50%	{transform:rotate(0deg)	translate(0,0);}
+	62.5%	{transform:rotate(-0.4deg)	translate(1px,0);}
+	75%	{transform:rotate(-0.8deg)	translate(0,1px);}
+	87.5%	{transform:rotate(-0.4deg)	translate(-1px,-1px);}
+	100%	{transform:rotate(0deg)	translate(0,0);}
+}
+#bg_t1{
+    width: 100%;
+    position: absolute;
+    top: 600px;
+    display: block;
+    z-index: 10;
+}
+#bg_t2{
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    display: block;
+    z-index: 10;
+}
+#bg_r{
+    position: absolute;
+    top: 620px;
+    left: -webkit-calc( 100% - 156px );
+    left: calc( 100% - 156px );
+    display: block;
+    z-index: 9;
+}
+#bg_l1{
+    position: absolute;
+    top: 600px;
+    right: -webkit-calc( 100% - 167px );
+    right: calc( 100% - 167px );
+    display: block;
+    z-index: 9;
+}
+#bg_l2{
+    position: absolute;
+    top: 1500px;
+    right: -webkit-calc( 100% - 140px );
+    right: calc( 100% - 140px );
+    display: block;
+    z-index: 9;
+}
+#tw1{
+    min-width: 640px;
+    min-height: 960px;
+    float: left;
+    margin-right: 20px;
+}
+#tw2{
+    min-width: 200px;
+    min-height: 960px;
+}
