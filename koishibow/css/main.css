@@ -85,7 +85,6 @@ navi li:last-child{
     background-image: url(../img/mempj_bg_main.png);
 }
 #mem dl dt,dd{
-    width: 260px;
     margin: 0 auto;
     text-align: left;
 
