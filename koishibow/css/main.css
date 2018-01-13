@@ -4,6 +4,7 @@ img {
 }
 a{
     color: #bcb8a1;
+    text-decoration: none;
 }
 body{
     font:1.1rem/1.8 Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
@@ -67,6 +68,12 @@ navi li:last-child{
     padding: 50px;
     margin-bottom: 40px;
     text-align: center;
+}
+#news{
+    max-width: 860px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 4px double #bcb8a1;
 }
 #top{
     background-image: url(../img/toppj_bg_blu.png);
@@ -215,4 +222,59 @@ footer img{
 #tw2{
     min-width: 200px;
     min-height: 960px;
+}
+#gsys_ss{
+    text-align: center;
+}
+/* スクリーンショット拡大 */
+.lb {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.7);
+    opacity: 0;
+    transition: .3s opacity ease;
+    z-index: -1;
+}
+
+.lb img {
+    width: auto !important;
+    max-height: 100%!important;
+    transform: scale(.7);
+    transition: .4s transform ease;
+    pointer-events: none;
+}
+
+.lb:target {
+    opacity: 1;
+    z-index: 103;
+}
+
+.lb:target img {
+    transform: scale(1);
+}
+
+
+/* なんちゃって閉じるボタン（いらない場合は消す） */
+.lb::before,.lb::after {
+    display: block;
+    position: fixed;
+    content: "";
+    width: 50px;
+    height:3px;
+    top: 60px;
+    right: 60px;
+    background: #fff;
+    border-radius: 4px;
+}
+.lb::before {
+    transform: rotate(-315deg);
+}
+.lb::after {
+    transform: rotate(315deg);
 }
