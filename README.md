@@ -1,26 +1,30 @@
-# ひまわり鎮痛剤
 🎉 [sai-chan.com](https://sai-chan.com/) 🎉
 
-## ローカルで確認
-
-#### インストール
-```bash
-$ npm install
+.env (dev build)
+```
+MODE='development'
 ```
 
-#### ビルド
-```bash
-$ npm run build
+.env (production build)
+```
+MODE='production'
 ```
 
-#### 起動
-```bash
-$ npm run start
+in production build, js and css is minified.
+
+build
+```
+$ yarn install
+$ yarn build
+# watchc
+$ yarn start
 ```
 
-[localhost:8080](http://localhost:8080/)
+To build, production files is generated in public dir
 
-## ftp
+edit profile or products, to edit `src/scripts/config/{profile.js, product.js}`
+
+## ftp setup
 ```
 yum install -y vsftpd
 service vsftpd start
