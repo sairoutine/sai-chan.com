@@ -11,5 +11,4 @@ suzudango/music/music.wav
 node_modules/
 #public/scripts/app.min.js
 #public/stylesheets/style.css
-
-.env
+#.env
