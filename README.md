@@ -2,7 +2,7 @@
 
 ## How to build
 
-1. edit `.env` file
+*1 edit `.env` file*
 
 dev build
 ```
@@ -15,11 +15,13 @@ MODE='production'
 ```
 On production building, js and css is minified.
 
-2. edit
+*2. edit*
+
 Build ends, production files(js and css) are generated in `./stylesheet` and `./scripts` dir.
 To change profile or products, to edit `src/scripts/config/{profile.js, product.js}`.
 
-3. build
+*3. build*
+
 ```
 # only first
 yarn install
