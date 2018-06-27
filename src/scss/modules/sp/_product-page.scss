@@ -1,0 +1,43 @@
+@include sp-layout {
+  .product-box {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    opacity: 0;
+
+    .product {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 60px;
+
+      .link { transition: all 0.5s ease 0s; display: block; }
+      .link:hover { opacity: 0.5; }
+
+      .thumb {
+        display: block;
+        width: 100%;
+      }
+
+      .name {
+        font-size: 22px;
+        color: #444;
+        padding: 12px;
+      }
+
+      .description {
+        font-size: 13px;
+        color: #666;
+        padding: 0 10px;
+        box-sizing: border-box;
+
+        a {
+          font-size: 15px;
+          color: rgb(0,100,255);
+          margin-right: 10px;
+        }
+        a:hover { text-decoration: underline; }
+      }
+    }
+  }
+}

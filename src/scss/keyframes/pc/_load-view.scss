@@ -1,0 +1,62 @@
+@keyframes load-view__fall-bg-1 {
+  from { transform: translateY(-100%) rotate(20deg); }
+  to   { transform: translateY(0%) rotate(0); }
+}
+@keyframes load-view__fall-bg-2 {
+  from { transform: translateY(-100%) rotate(-20deg); }
+  to   { transform: translateY(0%) rotate(0); }
+}
+
+@keyframes load-view__move-lego-1 {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-200px); }
+}
+@keyframes load-view__move-lego-2 {
+  from { transform: translateX(0); }
+  to   { transform: translateX(200px); }
+}
+
+@keyframes load-view__rotate-dice {
+  from { transform: rotate(-90deg); }
+  to   { transform: rotate(0deg); }
+}
+
+@keyframes load-view__show-label-1 {
+  from { opacity: 0; transform: translate(0px, -50px) scale(5, 2); } 
+  to   { opacity: 1; transform: translate(0px, 0px) scale(1); } 
+}
+@keyframes load-view__show-label-2 {
+  from { opacity: 0; transform: translate(0px, 50px) scale(2, 5); } 
+  to   { opacity: 1; transform: translate(0px, 0px) scale(1); } 
+}
+
+@keyframes load-view__sway {
+  0%   { transform: translate(-5px, -5px); }
+  40%  { transform: translate(5px, 5px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes load-view__fall-title-logo {
+  from { transform: translateY(0%) rotate(0); }
+  to   { transform: translateY(100%) rotate(10deg); }
+}
+
+@keyframes load-view__fall-domain {
+  from { transform: translateY(-100%) scaleY(6); }
+  to   { transform: translateY(0%) scaleY(1); }
+}
+
+@keyframes load-view__rotate-text-box {
+  from { transform: rotate(0); }
+  to   { transform: rotate(90deg); }
+}
+
+@keyframes load-view__fall-progress-bar {
+  from { transform: translateY(0) rotate(0) scale(1); opacity: 1; }
+  to   { transform: translateY(300px) rotate(100deg) scale(0.2); opacity: 0; }
+}
+
+@keyframes load-view__show-login {
+  from { transform: translateY(-100%) scaleY(3); }
+  to   { transform: translateY(0%) scaleY(1); }
+}

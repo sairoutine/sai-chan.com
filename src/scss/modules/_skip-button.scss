@@ -1,0 +1,21 @@
+.skip-button {
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  background-image: url(../images/skip.svg);
+  background-size: auto 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease 0s;
+  transform: translateX(100%);
+  animation: slide-left 0.5s ease 0.4s forwards;
+  z-index: 12;
+}
+.skip-button:hover { opacity: 0.8; }
+
+@include pc-layout {
+  .skip-button { right: -3px; width: 140px; height: 140px; }
+}
+@include sp-layout {
+  .skip-button { right: -1px; width: 90px; height: 90px; }
+}
