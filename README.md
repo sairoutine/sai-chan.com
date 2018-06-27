@@ -1,28 +1,40 @@
-🎉 [sai-chan.com](https://sai-chan.com/) 🎉
+# 🎉 [sai-chan.com](https://sai-chan.com/) 🎉
 
-.env (dev build)
+## How to build
+
+1. edit `.env` file
+
+dev build
 ```
 MODE='development'
 ```
 
-.env (production build)
+production build
 ```
 MODE='production'
 ```
+On production building, js and css is minified.
 
-in production build, js and css is minified.
+2. edit
+Build ends, production files(js and css) are generated in `./stylesheet` and `./scripts` dir.
+To change profile or products, to edit `src/scripts/config/{profile.js, product.js}`.
 
-build
+3. build
 ```
-$ yarn install
-$ yarn build
-# watchc
+# only first
+yarn install
+
+yarn build
+```
+
+# Get Started
+
+Watch `./src` and start web server.
+```
 $ yarn start
 ```
 
-To build, production files is generated in public dir
-
-edit profile or products, to edit `src/scripts/config/{profile.js, product.js}`
+# Infrastructure
 
 ## ftp setup
 ```
