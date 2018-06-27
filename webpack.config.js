@@ -9,7 +9,7 @@ const js = {
   mode: MODE,
   entry: `${ __dirname }/src/scripts/app.js`,
   output: {
-    path: `${ __dirname }/public/scripts`,
+    path: `${ __dirname }/scripts`,
     filename: 'app.min.js'
   },
   module: {
@@ -30,7 +30,7 @@ const js = {
     ]
   },
   devServer: {
-    contentBase: 'public',
+    contentBase: './',
     open: true
   }
 }
@@ -39,7 +39,7 @@ const css = {
   mode: MODE,
   entry: `${ __dirname }/src/scss/style.scss`,
   output: {
-    path: `${ __dirname }/public/stylesheets`,
+    path: `${ __dirname }/stylesheets`,
     filename: 'style.css'
   },
   module: {
