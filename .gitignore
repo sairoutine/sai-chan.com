@@ -7,3 +7,9 @@ yakusoku/taikenban.zip
 suzudango/music/all.zip
 suzudango/music/music.mp3
 suzudango/music/music.wav
+
+node_modules/
+public/scripts/app.min.js
+public/stylesheets/style.css
+
+.env
