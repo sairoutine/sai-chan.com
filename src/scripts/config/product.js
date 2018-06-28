@@ -1,14 +1,14 @@
 export default [
   {
     name: "3rd eye",
-    thumb: "./images/product-page/3rdeye.jpg",
-    description: "古明地こいしが主人公の東方Project二次創作探索ホラーアドベンチャー。<br /><br />・頒布予定イベント<br />2018年05月06日 例大祭「B20a」<br />2018年08月10日 C94夏コミ(予定)<br />2018年12月 C95冬コミにて完成版 頒布予定",
+    thumb: "./images/product-page/3rdeye.png",
+    description: "古明地こいしが主人公の東方Project二次創作探索ホラーゲーム。<br /><br />・頒布予定イベント<br />2018年05月06日 例大祭「B20a」<br />2018年08月10日 C94夏コミ「東二-21ab」<br />2018年12月 C95冬コミにて完成版 頒布予定",
     link: "http://3rdeye.sai-chan.com/"
   },
   {
     name: "紫と霊夢の終わらない夏",
     thumb: "./images/product-page/yukareimu.png",
-    description: '八雲紫と博麗霊夢が主人公の東方Project二次創作2Dアクションパズルゲーム。C92夏コミで頒布<br /><br />各種同人ショップで委託中。1000円(税抜)<br /><a target="_blank" href="https://www.melonbooks.co.jp/detail/detail.php?product_id=276863">メロンソーダ</a><a target="_blank" href="https://ec.toranoana.jp/tora_r/ec/item/040030561168?circle_new">とらのあな</a>',
+    description: '八雲紫と博麗霊夢が主人公の東方Project二次創作2Dアクションパズルゲーム。C92夏コミで頒布<br /><br />各種同人ショップで委託中。1000円(税抜)<br /><a target="_blank" href="https://www.melonbooks.co.jp/detail/detail.php?product_id=276863">メロンブックス</a><a target="_blank" href="https://ec.toranoana.jp/tora_r/ec/item/040030561168?circle_new">とらのあな</a>',
     link: "http://yukareimu.sai-chan.com/"
   },
   {
@@ -49,19 +49,19 @@ export default [
   },
   {
     name: "Bootstrap Theme \"Frandre\"",
-    thumb: "./images/product-page/sample.png",
+    thumb: "https://sairoutine.github.io/Frandre/assets/img/sample.png",
     description: 'Ubuntu12.04 の配色をモチーフにしたBootstrap テーマ',
     link: "http://sairoutine.github.io/Frandre"
   },
   {
     name: "Bootstrap Theme \"Kochiya\"",
-    thumb: "./images/product-page/sample2.png",
+    thumb: "https://sairoutine.github.io/Kochiya/assets/img/sample.png",
     description: 'Bootswatch Yetiの配色をモチーフにしたBootstrap テーマ',
     link: "http://sairoutine.github.io/Kochiya"
   },
   {
     name: "Bootstrap Theme \"Alice\"",
-    thumb: "./images/product-page/sample3.png",
+    thumb: "https://sairoutine.github.io/Alice/assets/img/sample.png",
     description: 'Bootswatch Journalの配色をモチーフにしたBootstrap テーマ',
     link: "http://sairoutine.github.io/Alice"
   },
