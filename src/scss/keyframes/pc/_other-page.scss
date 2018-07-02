@@ -1,0 +1,13 @@
+@keyframes other-page__show {
+  from { transform: rotate(0deg) scale(0); }
+  to   { transform: rotate(90deg) scale(1); }
+}
+@keyframes other-page__hidden {
+  from { transform: rotate(90deg) scale(1); }
+  to   { transform: rotate(0deg) scale(0); }
+}
+
+@keyframes other-page__show-page {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0px); opacity: 1; }
+}

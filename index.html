@@ -1,394 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>ひまわり鎮痛剤</title>
+    <!--
 
-	<title>Sai-chan.com</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-	<style>
-	.trimming {
-		height: 475px;
-		overflow: scroll;
-	}
-	.trimming2 {
-		height: 390px;
-		overflow: scroll;
-	}
+    「博麗霊夢の言う事は全て正解よ」
+    
+    Designed by yui540.
 
-	</style>
-</head>
-<body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="./">Sai-chan.com</a>
-			</div>
-			<!--
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="./">Home</a></li>
-					<li><a href="./about.html">About</a></li>
-					<li><a href="./member.html">Member</a></li>
-					<li><a href="./contact.html">Contact</a></li>
-				</ul>
-			</div>
-			-->
-		</div><!-- /.container-fluid -->
-	</nav>
+    -->
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+    <meta property="og:url" content="https://sai-chan.com/">
+    <meta property="og:image" content="https://sai-chan.com/images/ogp.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ひまわり鎮痛剤">
+    <meta property="og:site_name" content="sai-chan.com">
+    <meta property="og:description" content="同人ゲームサークル「ひまわり鎮痛剤」Webサイトです">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@saigyojiyu" />
+    <meta name="twitter:title" content="ひまわり鎮痛剤" />
+    <meta name="twitter:description" content="同人ゲームサークル「ひまわり鎮痛剤」Webサイトです" />
+    <meta name="twitter:image" content="https://sai-chan.com/images/ogp.png" />
+    <link rel="shortcut icon" href="https://sai-chan.com/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://sai-chan.com/images/icon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/font.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+  </head>
+  <body>
+    <main id="root">
+      <!--*********************************** load view ***********************************-->
+      <div class="load-view">
+        <div class="load-view__progress-bar">
+          <div class="bg">
+            <div class="login">
+              <div class="frame">
+                <div></div><div></div><div></div>
+              </div>
+              <div class="label"></div>
+            </div>
+          </div>
+          <div class="dice">
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+          </div>
+          <div class="legos">
+            <div></div><div></div>
+          </div>
+          <div class="text-box">
+            <div class="label"></div>
+            <div class="title-logo"><img src="./images/title-logo.svg" alt="タイトルロゴ" /></div>
+            <div class="domain"><img src="./images/load-view/domain.svg" alt="ドメイン" /></div>
+          </div>
+        </div>
+        <div class="load-view__bg">
+          <div></div><div></div><div></div>
+        </div>
+      </div>
+      <!--*********************************** motion yukari ***********************************-->
+      <div class="motion-yukari">
+        <div class="motion-yukari__effects">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="motion-yukari__frame">
+          <section class="frame-1">
+            <div></div><div></div><div></div><div></div>
+          </section>
+          <section class="frame-2">
+            <div></div><div></div><div></div><div></div>
+          </section>
+        </div>
+        <div class="motion-yukari__silhouette"></div>
+        <div class="motion-yukari__telop">
+          <div class="box">
+            <div class="inner">
+              <div></div><div></div><div></div>
+            </div>
+          </div>
+        </div>
+        <div class="motion-yukari__end">
+          <img class="text" src="./images/motion-yukari/text.svg" alt="「博麗霊夢の言う事は全て正解よ」" />
+        </div>
+      </div>
+      <!--*********************************** motion reimu ***********************************-->
+      <div class="motion-reimu">
+        <div class="motion-reimu__effects">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="motion-reimu__eye">
+          <div class="bg">
+            <div></div><div></div><div></div><div></div><div></div>
+          </div>
+          <div class="name"></div>
+        </div>
+        <div class="motion-reimu__curtain">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="motion-reimu__text">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="motion-reimu__char">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="motion-reimu__end"></div>
+      </div>
+      <!--*********************************** top-page ***********************************-->
+      <div class="top-page">
+        <div class="top-page__effects">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="top-page__bg"></div>
+        <div class="top-page__main-visual"></div>
+        <img class="top-page__logo" src="./images/top-page/logo.png" alt="ひまわり鎮痛剤" />
+        <nav class="top-page__nav">
+          <strong><a href="#" title="profile" title="プロフィール">プロフィール</a></strong>
+          <strong><a href="#" title="product" title="制作物一覧">制作物一覧</a></strong>
+        </nav>
+      </div>
+      <!--*********************************** other-page ***********************************-->
+      <div class="other-page">
+        <div class="other-page__bg">
+          <div></div><div></div><div></div>
+        </div>
+        <div class="other-page__body">
+          <!-- profile-page -->
+          <article class="profile-page" style="display:none">
+            <section class="title">
+              <h1>プロフィール</h1>
+              <p>#01_profile</p>
+            </section>
+            <profile-box />
+          </article>
+          
+          <!-- product-page -->
+          <article class="product-page" style="display:none">
+            <section class="title">
+              <h1>制作物一覧</h1>
+              <p>#02_product</p>
+            </section>
+            <product-box />
+          </article>
+        </div>
+        <a class="other-page__close-btn" href="#" title="閉じる">
+          <span></span>
+        </a>
+      </div>
+      <!--*********************************** skip-button ***********************************-->
+      <a href="#" class="skip-button" title="スキップボタン"></a>
+    </main>
+	<script src="./scripts/app.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<div class="container-fluid" style="padding-top: 100px;">
-		<div class="row">
-			<div class="col-md-12">
-				<h1>Profile</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-1">
-				<img src="http://www.paper-glasses.com/api/twipi/sairoutine/bigger">
-			</div>
-			<div class="col-md-11">
-				<dl class="dl-horizontal">
-					<dt>Name</dt><dd>Sai</dd>
-					<dt>E-Mail</dt><dd>sairoutine★gmail.com</dd>
-					<dt>Job</dt><dd>Web Development Engineer / Database Specialist / Game Programmer</dd>
-					<dt>Love</dt><dd>Computer Science / Game Development / Otaku Culture</dd>
-				</dl>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<h1>Blog</h1>
-			</div>
-			<div class="col-md-3">
-				<h1>Link</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<a href="http://sairoutine.hatenablog.com/">まるまるこふこふ</a>
-			</div>
-			<div class="col-md-3">
-				<a href="https://twitter.com/sairoutine">Twitter</a></br>
-				<a href="https://github.com/sairoutine">GitHub</a><br />
-				<a href="http://www.slideshare.net/sairoutine">Slideshare</a><br />
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<h1>Work</h1>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://3rdeye.sai-chan.com/">3rd eye</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="http://3rdeye.sai-chan.com/" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/3rdeye.jpg">
-						</a>
-						古明地こいしが主人公の東方Project二次創作<br />
-						探索ホラーアドベンチャー。<br />
-						<br />
-						・頒布予定イベント<br />
-						2018年05月06日 例大祭「B20a」<br />
-						2018年08月10日 C94夏コミ(予定)<br />
-						2018年12月 C95冬コミにて完成版 頒布予定<br />
-					</div>
-				</div>
-			</div>
-
-
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://yukareimu.sai-chan.com/">紫と霊夢の終わらない夏</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="http://yukareimu.sai-chan.com/" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/yukareimu.png">
-						</a>
-						八雲紫と博麗霊夢が主人公の東方Project二次創作<br />
-						2Dアクションパズルゲーム。C92夏コミで頒布<br />
-						<br />
-						各種同人ショップで委託中。1000円(税抜)<br />
-						<a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=276863" target="_blank">メロンブックス</a>
-						<a href="http://www.toranoana.jp/mailorder/article/04/0030/56/11/040030561168.html?circle_new" target="_blank">とらのあな</a>
-
-
-					</div>
-				</div>
-			</div>
-
-
-
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://yakusoku.sai-chan.com/">宇佐見蓮子の大事な約束</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="http://yakusoku.sai-chan.com/" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/yakusoku.png">
-						</a>
-						秘封倶楽部が主人公の東方Project二次創作<br />
-						弾幕シューティングゲーム。C91冬コミで頒布<br />
-						<br />
-						各種同人ショップで委託中。1000円(税抜)<br />
-						<!--
-						<a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=195998" target="_blank">メロンブックス</a>
-						<a href="http://www.toranoana.jp/mailorder/article/04/0030/48/59/040030485939.html" target="_blank">とらのあな</a>
-						-->
-						<a href="http://www.dlsite.com/maniax/announce/=/product_id/RJ190624.html" target="_blank">DLsite</a>
-						<a href="http://www.melonbooks.com/index.php?main_page=product_info&products_id=IT0000197818" target="_blank">MelonBooksDL</a>
-
-
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="https://sairoutine.booth.pm/items/668897">Emscriptoon</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="https://sairoutine.booth.pm/items/668897" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/emscriptoon.png">
-						</a>
-						2017/10/22(日) 「技術書典3」い08で頒布した<br />
-						<a href="https://github.com/kripken/emscripten">Emscripten</a> の解説本です。<br />
-						<br />
-						Booth にてDL頒布中。300円(税抜)<br />
-						<a href="https://sairoutine.booth.pm/items/668897" target="_blank">Booth<a/>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="https://booth.pm/ja/items/500149">Webエンジニアのためのゲームプログラミング入門</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="https://booth.pm/ja/items/500149" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/web_gameprogramming.png">
-						</a>
-						2017/4/9(日) 「技術書典2」お-36で頒布した<br />
-						JavaScript と HTML5 でゲームを作る本です。<br />
-						<br />
-						Booth にてDL販売中。500円(税抜)<br />
-						<a href="https://booth.pm/ja/items/500149" target="_blank">Booth<a/>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://sairoutine.github.io/faithjs/public/">Faith JS</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="http://sairoutine.github.io/faithjs/public/" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/faithjs.png">
-						</a>
-						ブラウザで遊べるNES(ファミコン)エミュレータ<br />
-						ROMは門真 なむ様(<a href="http://www.geocities.jp/littlimi/fc.htm">Little Limit</a>)のものです<br />
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://yukkuri.sai-chan.com/">Yukkuri Talker</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="http://yukkuri.sai-chan.com/" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/yukkuri.png">
-						</a>
-						ゆっくりボイスをweb上で作成できるサービス<br />
-						<br />
-						<a href="https://mithril.js.org/" target="_blank">Mithril</a>と<a href="https://www.a-quest.com/products/aquestalk.html" target="_blank">AquesTalk</a>を利用した<br />
-						SPA (Single Page Application)です。
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://korindo.sai-chan.com/">香霖堂書店</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="http://korindo.sai-chan.com/" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/korindo.png">
-						</a>
-						同人小説の感想が投稿できるWebサービス<br />
-						<br />
-						Node.js + MySQL 5.6 (フレームワークは<a href="https://expressjs.com/" target="_blank">Express</a>)
-					</div>
-				</div>
-			</div>
-
-
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://sairoutine.github.io/tohojs/public/">Touhou Project on JavaScript</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="http://sairoutine.github.io/tohojs/public/" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/tohojs.png">
-						</a>
-						JavaScript と HTML5 Canvas を使った<br />
-						ブラウザで遊べる弾幕シューティングゲーム<br />
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://sairoutine.github.io/Frandre">Bootstrap Theme "Frandre"</a>
-					</div>
-					<div class="panel-body trimming2">
-						<a href="http://sairoutine.github.io/Frandre" class="thumbnail">
-							<img class="img-responsive" src="https://sairoutine.github.io/Frandre/assets/img/sample.png">
-						</a>
-						Ubuntu12.04 の配色をモチーフにしたBootstrap テーマ
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://sairoutine.github.io/Kochiya">Bootstrap Theme "Kochiya"</a>
-					</div>
-					<div class="panel-body trimming2">
-						<a href="http://sairoutine.github.io/Kochiya" class="thumbnail">
-							<img class="img-responsive" src="https://sairoutine.github.io/Kochiya/assets/img/sample.png">
-						</a>
-						Bootswatch Yetiの配色をモチーフにしたBootstrap テーマ
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="http://sairoutine.github.io/Alice">Bootstrap Theme "Alice"</a>
-					</div>
-					<div class="panel-body trimming2">
-						<a href="http://sairoutine.github.io/Alice" class="thumbnail">
-							<img class="img-responsive" src="https://sairoutine.github.io/Alice/assets/img/sample.png">
-						</a>
-						Bootswatch Journalの配色をモチーフにしたBootstrap テーマ
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-<!--
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="https://sairoutine.github.io/PetKoishi/public/">こいしちゃんを監禁する</a>
-					</div>
-					<div class="panel-body trimming2">
-						<a href="https://sairoutine.github.io/PetKoishi/public/"class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/pet_koishi.png">
-						</a>
-						こいしちゃんを監禁して育成するゲーム。<br />
-						PC/スマートフォンのブラウザで遊べる
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="./tyranoscript/tutorial1/index.html">霊夢と魔理沙のティラノスクリプト入門</a>
-					</div>
-					<div class="panel-body trimming2">
-						<a href="./tyranoscript/tutorial1/index.html" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/tyrano.png">
-						</a>
-						<a href="http://tyrano.jp/">ティラノスクリプト</a>で作った紙芝居
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="https://toho-longskirt-quiz.herokuapp.com/">東方ロングスカートクイズ</a>
-					</div>
-					<div class="panel-body trimming2">
-						<a href="https://toho-longskirt-quiz.herokuapp.com/" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/longskirt.png">
-						</a>
-						Pixivの東方Projectの絵にロングスカートのタグが<br />
-						付く付かないの基準がわからない<br />
-						(そもそも登場人物全員ロングスカートなのでは？)<br />
-						という疑問から生まれたPixivの絵から<br />
-						ロングスカートタグがついてるか当てるクイズです。
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<a href="./rubberstrap.html">ラバーストラップ</a>
-					</div>
-					<div class="panel-body trimming">
-						<a href="./rubberstrap.html" class="thumbnail">
-							<img class="img-responsive" src="img/work_thumbnails/rubberstrap.png">
-						</a>
-						同人誌即売会で頒布しているラバーストラップグッズ。<br />
-						東方Projectやシンデレラガールズ等。
-					</div>
-				</div>
-			</div>
--->
-
-	</div><!-- /.container-fluid -->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-72227241-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
-</body>
+      ga('create', 'UA-72227241-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
-

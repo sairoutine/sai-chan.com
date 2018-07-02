@@ -1,0 +1,74 @@
+@include sp-layout {
+  .profile-box {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 150px;
+    opacity: 0;
+
+    .icon {
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+      border: solid 10px rgba(0,0,0,0.1);
+      border-radius: 50%;
+    }
+
+    .name {
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 150px;
+      padding: 6px 0;
+      background-color: #fff;
+      border-left: solid 30px #aaa;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      font-size: 20px;
+      text-align: center;
+      transform: rotate(-5deg);
+    }
+
+    .info {
+      margin: 0 auto;
+      margin-top: 60px;
+      width: 80%;
+
+      p {
+        position: relative;
+        font-size: 14px;
+        color: #444;
+        padding: 3px 10px;
+        border-bottom: solid 1px #ccc;
+        margin-bottom: 15px;
+
+        &::after {
+          content: ""; display: block;
+          position: absolute;
+          bottom: -5px; left: -15px;
+          width: 10px; height: 10px;
+          background-color: #ccc;
+        }
+      }
+    }
+
+    .sub-title {
+      font-size: 30px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+
+    .links {
+      margin-top: 20px;
+      margin-bottom: 100px;
+      text-align: center;
+      
+      a {
+        font-size: 16px;
+        color: rgb(0,130,255);
+        display: inline-block;
+        margin-right: 20px;
+      }
+      a:last-child { margin-right: 0; }
+    }
+  }
+}
