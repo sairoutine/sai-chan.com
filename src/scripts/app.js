@@ -5,6 +5,7 @@ import profile_data from './config/profile'
 import product_data from './config/product'
 
 // components
+import './components/about-box.tag'
 import './components/profile-box.tag'
 import './components/product-box.tag'
 
@@ -20,5 +21,6 @@ util.preload(preload_data, () => {
 }, data => {})
 
 // mount
+riot.mount('about-box',   {})
 riot.mount('profile-box', { profile: profile_data })
 riot.mount('product-box', { product: product_data })

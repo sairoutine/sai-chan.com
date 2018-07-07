@@ -116,7 +116,8 @@
         <div class="top-page__main-visual"></div>
         <img class="top-page__logo" src="./images/top-page/logo.png" alt="ひまわり鎮痛剤" />
         <nav class="top-page__nav">
-          <strong><a href="#" title="profile" title="プロフィール">プロフィール</a></strong>
+          <strong><a href="#" title="about" title="サークルについて">サークルについて</a></strong>
+          <strong><a href="#" title="profile" title="メンバー">メンバー</a></strong>
           <strong><a href="#" title="product" title="制作物一覧">制作物一覧</a></strong>
         </nav>
       </div>
@@ -126,20 +127,29 @@
           <div></div><div></div><div></div>
         </div>
         <div class="other-page__body">
+          <!-- about-page -->
+          <article class="about-page" style="display:none">
+            <section class="title">
+              <h1>サークルについて</h1>
+              <p>#01_about</p>
+            </section>
+            <about-box />
+          </article>
+
           <!-- profile-page -->
           <article class="profile-page" style="display:none">
             <section class="title">
-              <h1>プロフィール</h1>
-              <p>#01_profile</p>
+              <h1>メンバー</h1>
+              <p>#02_profile</p>
             </section>
             <profile-box />
           </article>
-          
+
           <!-- product-page -->
           <article class="product-page" style="display:none">
             <section class="title">
               <h1>制作物一覧</h1>
-              <p>#02_product</p>
+              <p>#03_product</p>
             </section>
             <product-box />
           </article>

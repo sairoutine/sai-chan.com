@@ -4,6 +4,7 @@ const motion_yukari = document.querySelector('.motion-yukari')
 const motion_reimu  = document.querySelector('.motion-reimu')
 const top_page      = document.querySelector('.top-page')
 const other_page    = document.querySelector('.other-page')
+const about_page    = document.querySelector('.about-page')
 const profile_page  = document.querySelector('.profile-page')
 const product_page  = document.querySelector('.product-page')
 
@@ -107,7 +108,9 @@ export const bindNavigation = () => {
       other_page.style.display = 'block'
       other_page.setAttribute('data-state', 'active')
 
-      if(e.target.title === 'profile')
+      if(e.target.title === 'about')
+        about_page.style.display = 'block'
+      else if(e.target.title === 'profile')
         profile_page.style.display = 'block'
       else
         product_page.style.display = 'block'
@@ -124,6 +127,7 @@ export const bindCloseBtn = () => {
     e.preventDefault()
 
     other_page.setAttribute('data-state', 'passive')
+    about_page.style.display   = 'none'
     profile_page.style.display = 'none'
     product_page.style.display = 'none'
     setTimeout(() => { other_page.style.display = 'none' }, 600)
