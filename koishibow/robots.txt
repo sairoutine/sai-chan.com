@@ -1,0 +1,3 @@
+User-Agent:*
+Disallow:
+Sitemap:http://3rdeye.sai-chan.com/sitemap.xml
