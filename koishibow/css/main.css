@@ -33,9 +33,16 @@ header{
     width: 960px;
     height: 540px;
     background-image: url(../img/toppg_hedder.jpg);
+    animation: horizontal 1s ease-in-out infinite alternate;
+    z-index: 20;
+    animation-duration: 1.1s;
 }
 header img {
-    margin: 388px 0 0 20px;    
+    position:absolute;
+    top:400px;
+    left:10px;
+    animation: horizontal 1s ease-in-out infinite alternate;
+    animation-duration: 1.3s;
 }
 main{
     min-height: 100vh;
@@ -71,10 +78,24 @@ navi li:last-child{
 }
 #news{
     max-width: 860px;
-    padding-bottom: 20px;
+    margin-bottom: 100px;
     text-align: center;
     border-bottom: 4px double #bcb8a1;
 }
+#news dl+dl{
+    border-top: dotted 2px #bcb8a1;
+    padding: 10px 0;
+}
+#news dt{
+    width: 20%;
+    margin: 0 auto;
+    background-color: #010507;
+    border-radius: 10px;   
+}
+#news dd{
+    margin: 0;
+}
+
 #top{
     background-image: url(../img/toppj_bg_blu.png);
 }
@@ -136,27 +157,33 @@ navi li:last-child{
 #sum_tx3{
     animation-duration: 1.5s
 }
-footer{
-    max-width: 500px;
-    margin-top: 160px;
+#footer1{
+    width: 100%;
     font-size:1rem;
 }
-footer dl{
-    max-width: 500px;
+#footer1 dl{
+    width: 100%;
     margin: 0 auto;
-    clear: both;
 }
-footer dt{
-    float: left;
-    clear: left;
-    min-width: 120px;
+#footer1 dt{
+    width: 40%;
+    display: inline-block;
+    text-align: right;
 }
-footer dd{
-    float: left;
-    margin-left: 0.5em;
+#footer1 dd{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
 }
-footer img{
+#footer1 img{
+    margin: 0 auto;
     vertical-align: bottom;
+}
+#footer1{
+    text-align: center;
+    margin: 0 auto;
 }
 #trydl{
     max-width: 500px;
@@ -223,6 +250,20 @@ footer img{
     min-width: 200px;
     min-height: 960px;
 }
+#bg_eyedrops{
+    position: absolute;
+    top: 1190px;
+    right: -webkit-calc( 100% - 260px );
+    right: calc( 100% - 260px );
+    display: block;
+    z-index: 30;
+}
+#btn_tw{
+    position: absolute;
+    top: 0;
+    display: block;
+    z-index: 50;
+}
 #gsys_ss{
     text-align: center;
 }
@@ -259,8 +300,7 @@ footer img{
     transform: scale(1);
 }
 
-
-/* なんちゃって閉じるボタン（いらない場合は消す） */
+/* スクリーンショット拡大 閉じるボタン */
 .lb::before,.lb::after {
     display: block;
     position: fixed;
