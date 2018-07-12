@@ -256,7 +256,6 @@ navi li:last-child{
     right: -webkit-calc( 100% - 260px );
     right: calc( 100% - 260px );
     display: block;
-    z-index: 30;
 }
 #btn_tw{
     position: absolute;
