@@ -261,14 +261,9 @@ div::-webkit-scrollbar-thumb{
     z-index: 9;
 }
 #tw1{
-    min-width: 640px;
-    min-height: 960px;
-    float: left;
-    margin-right: 20px;
-}
-#tw2{
-    min-width: 200px;
-    min-height: 960px;
+    width: 860px;
+    height: 960px;
+    text-align: center;
 }
 #bg_eyedrops{
     position: absolute;
