@@ -36,18 +36,6 @@ export default [
     link: "https://booth.pm/ja/items/500149"
   },
   {
-    name: "Yukkuri Talker",
-    thumb: "./images/product-page/yukkuri.png",
-    description: 'ゆっくりボイスをweb上で作成できるサービス<br /><br /><a target="_blank" href="https://mithril.js.org/">Mithril</a>と<a target="_blank" href="https://www.a-quest.com/products/aquestalk.html">AquesTalk</a>を利用したSPA (Single Page Application)です。',
-    link: "http://yukkuri.sai-chan.com/"
-  },
-  {
-    name: "香霖堂書店",
-    thumb: "./images/product-page/korindo.png",
-    description: '同人小説の感想が投稿できるWebサービス<br /><br />Node.js + MySQL 5.6 (フレームワークは<a target="_blank" href="https://expressjs.com/">Express</a>)',
-    link: "http://korindo.sai-chan.com/"
-  },
-  {
     name: "Touhou Project on JavaScript",
     thumb: "./images/product-page/tohojs.png",
     description: 'JavaScript と HTML5 Canvas を使ったブラウザで遊べる弾幕シューティングゲーム',
