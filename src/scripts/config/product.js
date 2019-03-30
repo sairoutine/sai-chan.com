@@ -37,7 +37,7 @@ export default [
   },
   {
     name: "Faith JS",
-    thumb: "./images/product-page/faith.png",
+    thumb: "./images/product-page/faithjs.png",
     description: 'ブラウザで遊べるNES(ファミコン)エミュレータ<br />ROMについては門真 なむ様(<a href="http://www.geocities.jp/littlimi/fc.htm">Little Limit</a>)の<br />作成されたものを使用させていただいてます<br />',
     link: "http://sairoutine.github.io/faithjs/public/"
   },
