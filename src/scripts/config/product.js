@@ -36,6 +36,12 @@ export default [
     link: "https://booth.pm/ja/items/500149"
   },
   {
+    name: "Faith JS",
+    thumb: "./images/product-page/faith.png",
+    description: 'ブラウザで遊べるNES(ファミコン)エミュレータ<br />ROMについては門真 なむ様(<a href="http://www.geocities.jp/littlimi/fc.htm">Little Limit</a>)の<br />作成されたものを使用させていただいてます<br />',
+    link: "http://sairoutine.github.io/faithjs/public/"
+  },
+  {
     name: "Touhou Project on JavaScript",
     thumb: "./images/product-page/tohojs.png",
     description: 'JavaScript と HTML5 Canvas を使ったブラウザで遊べる弾幕シューティングゲーム',
