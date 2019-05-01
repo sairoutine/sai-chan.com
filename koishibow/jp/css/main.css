@@ -2,6 +2,9 @@ img {
     max-width: 100%;
     height: auto;   
 }
+a img:hover {
+	opacity: 0.8 ;
+}
 a{
     color: #bcb8a1;
     text-decoration: none;
@@ -16,11 +19,13 @@ body{
     animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
+ul {
+  list-style: none;
+}
 @keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
 }
-
 @-webkit-keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
@@ -69,7 +74,7 @@ navi li:last-child{
     padding: 50px;
     margin-bottom: 40px;
 }
-#sum,#gsys,#con,#mem{
+#sum,#gsys,#con,#mem,#pre{
     max-width: 860px;
     min-height: 500px;
     padding: 50px;
@@ -116,6 +121,26 @@ navi li:last-child{
     background-image: url(../img/conpg_bg_main.png);
     text-align: center;
 }
+#con dl dt,#con dl dd{
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+#con dl dt{
+    font-size:1rem;
+    margin-bottom: 4px;
+    color: #bcb8a1;
+}
+#con dl dd{
+    font-size:1.2rem;
+    text-align: left;
+    line-height:1.5;
+    padding-left: 20px;
+}
+#con small{
+    font-size:0.8rem;
+    margin-left: 4px;
+}
 #mem{
     background-image: url(../img/mempj_bg_main.png);
 }
@@ -141,6 +166,20 @@ navi li:last-child{
 }
 #mem img{
     margin-left: 4px;
+}
+#pre{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+#pre ul li{
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+#pre ul li img{
+    width: 166px;
+    height: 166px;
+    margin: 2px;
 }
 @keyframes horizontal {
     0% { transform:translateX( -3px); }
@@ -261,6 +300,13 @@ navi li:last-child{
 #btn_tw{
     position: absolute;
     top: 0;
+    display: block;
+    z-index: 50;
+}
+#btn_pr{
+    position: absolute;
+    top: 0;
+    left: 100px;
     display: block;
     z-index: 50;
 }
