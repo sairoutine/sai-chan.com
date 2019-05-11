@@ -1,0 +1,15 @@
+@include pc-layout {
+  .request-box {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    opacity: 0;
+
+    .info {
+      margin: 0 auto;
+      margin-top: 60px;
+      width: 600px;
+    }
+  }
+}
