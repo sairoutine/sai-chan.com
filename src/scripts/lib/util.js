@@ -7,6 +7,7 @@ const other_page    = document.querySelector('.other-page')
 const about_page    = document.querySelector('.about-page')
 const profile_page  = document.querySelector('.profile-page')
 const product_page  = document.querySelector('.product-page')
+const request_page    = document.querySelector('.request-page')
 
 /**
  * 画像のプリロード
@@ -112,6 +113,8 @@ export const bindNavigation = () => {
         about_page.style.display = 'block'
       else if(e.target.title === 'profile')
         profile_page.style.display = 'block'
+      else if(e.target.title === 'request')
+        request_page.style.display = 'block'
       else
         product_page.style.display = 'block'
     })
@@ -130,6 +133,7 @@ export const bindCloseBtn = () => {
     about_page.style.display   = 'none'
     profile_page.style.display = 'none'
     product_page.style.display = 'none'
+    request_page.style.display = 'none'
     setTimeout(() => { other_page.style.display = 'none' }, 600)
   })
 }
