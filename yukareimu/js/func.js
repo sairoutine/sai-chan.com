@@ -77,13 +77,13 @@ $(document).ready(function(){
 	var title = encodeURIComponent(document.title);
 	//ツイートボタン
 	$('#tweet').click(function(){
-		window.open('http://twitter.com/share?text='+title+'&url='+url, 'tweetwindow', 'width=550, height=420');
+		window.open('https://twitter.com/share?text='+title+'&url='+url, 'tweetwindow', 'width=550, height=420');
 	});
 	//ツイート数
 	//JSONの読み込み
 	$.ajax({
 		type: 'GET',
-		url: 'http://urls.api.twitter.com/1/urls/count.json',
+		url: 'https://urls.api.twitter.com/1/urls/count.json',
 		data: {
 			url : encodeURI(url),
 			noncache: new Date()
@@ -95,12 +95,12 @@ $(document).ready(function(){
 	});
 	//いいねボタン
 	$('#like').click(function(){
-		window.open('http://www.facebook.com/sharer.php?u='+url+'&amp;t='+title, 'sharewindow', 'width=550, height=420');
+		window.open('https://www.facebook.com/sharer.php?u='+url+'&amp;t='+title, 'sharewindow', 'width=550, height=420');
 	});
 	//シェア数
 	var count;
 	$.ajax({
-		url:'http://graph.facebook.com/?id=' + url,
+		url:'https://graph.facebook.com/?id=' + url,
 		dataType:"jsonp",
 		success:function(obj){
 			if(typeof(obj.shares) == 'undefined'){
