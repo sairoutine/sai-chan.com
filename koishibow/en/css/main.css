@@ -278,6 +278,13 @@ div::-webkit-scrollbar-thumb{
     display: block;
     z-index: 50;
 }
+#btn_pr{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: block;
+    z-index: 50;
+}
 #gsys_ss{
     text-align: center;
 }
