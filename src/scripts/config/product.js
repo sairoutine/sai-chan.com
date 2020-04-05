@@ -2,7 +2,7 @@ export default [
   {
     name: "3rd eye",
     thumb: "./images/product-page/3rdeye.png",
-    description: "古明地こいしが主人公の東方Project二次創作探索ホラーゲーム。<br /><br />・頒布予定イベント<br />2019年5月5日 例大祭にて完成版 頒布予定",
+    description: '古明地こいしが主人公の東方Project二次創作探索ホラーゲーム。第16回博麗神社例大祭で頒布<br /><br />各種ショップでパッケージ・ダウンロード販売中。<br /><a target="_blank" href="https://store.steampowered.com/app/1131900/3rd_eye/">Steam</a><a target="_blank" href="https://www.melonbooks.co.jp/detail/detail.php?product_id=498633">メロンブックス</a>',
     link: "http://3rdeye.sai-chan.com/"
   },
   {
@@ -14,13 +14,13 @@ export default [
   {
     name: "紫と霊夢の終わらない夏",
     thumb: "./images/product-page/yukareimu.png",
-    description: '八雲紫と博麗霊夢が主人公の東方Project二次創作2Dアクションパズルゲーム。C92夏コミで頒布<br /><br />各種同人ショップで委託中。1000円(税抜)<br /><a target="_blank" href="https://www.melonbooks.co.jp/detail/detail.php?product_id=276863">メロンブックス</a><a target="_blank" href="https://ec.toranoana.jp/tora_r/ec/item/040030561168?circle_new">とらのあな</a>',
+    description: '八雲紫と博麗霊夢が主人公の東方Project二次創作2Dアクションパズルゲーム。C92夏コミで頒布<br /><br />各種同人ショップで委託中。1000円(税抜)<br /><a target="_blank" href="https://sairoutine.booth.pm/items/1272162">Booth</a>',
     link: "http://yukareimu.sai-chan.com/"
   },
   {
     name: "宇佐見蓮子の大事な約束",
     thumb: "./images/product-page/yakusoku.png",
-    description: '秘封倶楽部が主人公の東方Project二次創作弾幕シューティングゲーム。C91冬コミで頒布<br /><br />各種同人ショップで委託中。1000円(税抜)<br /><a target="_blank" href="http://www.dlsite.com/maniax/announce/=/product_id/RJ190624.html">DLSite</a><a target="_blank" href="http://www.melonbooks.com/index.php?main_page=product_info&products_id=IT0000197818">MelonBooksDL</a>',
+    description: '秘封倶楽部が主人公の東方Project二次創作弾幕シューティングゲーム。C91冬コミで頒布<br /><br />各種同人ショップで委託中。1000円(税抜)<br /><a target="_blank" href="http://www.dlsite.com/maniax/announce/=/product_id/RJ190624.html">DLSite</a><a target="_blank" href="http://www.melonbooks.com/index.php?main_page=product_info&products_id=IT0000197818">MelonBooksDL</a><a target="_blank" href="https://booth.pm/ja/items/1272159">Booth</a>',
     link: "http://yakusoku.sai-chan.com/"
   },
   {
