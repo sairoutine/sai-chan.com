@@ -3,7 +3,13 @@ export default [
     name: "3rd eye",
     thumb: "./images/product-page/3rdeye.png",
     description: '古明地こいしが主人公の東方Project二次創作探索ホラーゲーム。第16回博麗神社例大祭で頒布<br /><br />各種ショップでパッケージ・ダウンロード販売中。<br /><a target="_blank" href="https://store.steampowered.com/app/1131900/3rd_eye/">Steam</a><a target="_blank" href="https://www.melonbooks.co.jp/detail/detail.php?product_id=498633">メロンブックス</a>',
-    link: "http://3rdeye.sai-chan.com/"
+    link: "https://3rdeye.sai-chan.com/"
+  },
+  {
+    name: "サクヤ大戦",
+    thumb: "./images/product-page/sakuyawars.png",
+    description: '十六夜咲夜が主人公の東方Project二次創作タワーディフェンスゲーム。RPGアツマールにて無料公開中。',
+    link: "https://game.nicovideo.jp/atsumaru/games/gm16457"
   },
   {
     name: "MARISA-HIGHLOW",
