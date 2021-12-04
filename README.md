@@ -40,9 +40,11 @@ $ yarn start
 
 ## ftp setup
 ```
-yum install -y vsftpd
-service vsftpd start
-chkconfig vsftpd on
-useradd koishibow
-cd /etc/
-git clone git@github.com:sairoutine/sai-chan.com-vsftpd.git vsftpd
+sudo yum install -y vsftpd
+sudo service vsftpd start
+sudo chkconfig vsftpd on
+sudo useradd koishibow
+sudo rm -rf /etc/vsftpd/
+sudo mkdir /etc/vsftpd/
+sudo chown sairoutine:sairoutine /etc/vsftpd/
+git clone git@github.com:sairoutine/sai-chan.com-vsftpd.git /etc/vsftpd
