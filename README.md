@@ -36,15 +36,4 @@ Watch `./src` and start web server.
 $ yarn start
 ```
 
-# Infrastructure
 
-## ftp setup
-```
-sudo yum install -y vsftpd
-sudo service vsftpd start
-sudo chkconfig vsftpd on
-sudo useradd koishibow
-sudo rm -rf /etc/vsftpd/
-sudo mkdir /etc/vsftpd/
-sudo chown sairoutine:sairoutine /etc/vsftpd/
-git clone git@github.com:sairoutine/sai-chan.com-vsftpd.git /etc/vsftpd
