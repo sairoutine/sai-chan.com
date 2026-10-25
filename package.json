@@ -8,6 +8,7 @@
     "watch": "webpack --watch --colors"
   },
   "author": "sairoutine",
+  "packageManager": "yarn@1.22.22",
   "contributors": [
     "yui540"
   ],
